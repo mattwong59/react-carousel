@@ -47,6 +47,7 @@ export const CarouselContainerInner = styled(Flex)`
   scroll-snap-type: x mandatory;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  margin-left: -1rem;
 
   &::-webkit-scrollbar {
     display: none;
@@ -54,6 +55,8 @@ export const CarouselContainerInner = styled(Flex)`
 
   & > * {
     scroll-snap-align: center;
+    margin-left: 2rem;
+    flex: 0 0 auto;
   }
 `;
 
