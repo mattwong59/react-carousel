@@ -37,3 +37,43 @@ export const Item = styled("div")`
   align-items: center;
   justify-content: center;
 `;
+
+export const CarouselContainer = styled(Relative)`
+  overflow: hidden;
+`;
+
+export const CarouselContainerInner = styled(Flex)`
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  & > * {
+    scroll-snap-align: center;
+  }
+`;
+
+export const colors = [
+  "#ff9ff3",
+  "#feca57",
+  "#ff9f43",
+  "#ff6b6b",
+  "#48dbfb",
+  "#1dd1a1",
+  "#5f27cd",
+  "#341f97",
+];
+
+export const colorsArray = colors.map((color) => (
+  <Item
+    size={20}
+    style={{ background: color, borderRadius: "20px", opacity: 0.9 }}
+    key={color}
+  >
+    {color}
+  </Item>
+));
