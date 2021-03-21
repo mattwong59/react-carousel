@@ -47,7 +47,7 @@ export const CarouselContainerInner = styled(Flex)`
   scroll-snap-type: x mandatory;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  margin-left: -1rem;
+  margin-right: 2rem;
 
   &::-webkit-scrollbar {
     display: none;
