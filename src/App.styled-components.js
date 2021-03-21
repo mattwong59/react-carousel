@@ -32,7 +32,7 @@ export const Item = styled("div")`
   font-size: 2rem;
   text-transform: capitalize;
   width: ${({ size }) => `${size}rem`};
-  height: ${({ size }) => `${size}rem`};
+  height: ${({ size }) => `${size * 1.5}rem`};
   display: flex;
   align-items: center;
   justify-content: center;
